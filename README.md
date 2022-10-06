@@ -12,6 +12,10 @@ Demo live at: [demo.vercel.store](https://demo.vercel.store/)
 - BigCommerce Demo: https://bigcommerce.vercel.store/
 - Vendure Demo: https://vendure.vercel.store
 - Saleor Demo: https://saleor.vercel.store/
+- Ordercloud Demo: https://ordercloud.vercel.store/
+- Spree Demo: https://spree.vercel.store/
+- Kibo Commerce Demo: https://kibocommerce.vercel.store/
+- Commerce.js Demo: https://commercejs.vercel.store/
 
 ## Features
 
@@ -27,7 +31,7 @@ Demo live at: [demo.vercel.store](https://demo.vercel.store/)
 
 ## Integrations
 
-Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Saleor and Vendure. We plan to support all major ecommerce backends.
+Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Saleor, Vendure, Spree and Commerce.js. We plan to support all major ecommerce backends.
 
 ## Considerations
 
@@ -79,7 +83,7 @@ For example: Turning `cart` off will disable Cart capabilities.
 
 > NOTE: The selected provider should support the feature that you are toggling. (This means that you can't turn wishlist on if the provider doesn't support this functionality out the box)
 
-- Open `commerce.config.json` 
+- Open `commerce.config.json`
 - You'll see a config file like this:
   ```json
   {
@@ -94,6 +98,8 @@ For example: Turning `cart` off will disable Cart capabilities.
 
 ### How to create a new provider
 
+🔔 New providers are on hold [until we have a new API for commerce](https://github.com/vercel/commerce/pull/252) 🔔
+
 Follow our docs for [Adding a new Commerce Provider](framework/commerce/new-provider.md).
 
 If you succeeded building a provider, submit a PR with a valid demo and we'll review it asap.
@@ -104,11 +110,10 @@ Our commitment to Open Source can be found [here](https://vercel.com/oss).
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
 2. Create a new branch `git checkout -b MY_BRANCH_NAME`
-3. Install yarn: `npm install -g yarn`
-4. Install the dependencies: `yarn`
-5. Duplicate `.env.template` and rename it to `.env.local`
-6. Add proper store values to `.env.local`
-7. Run `yarn dev` to build and watch for code changes
+3. Install the dependencies: `npm i`
+4. Duplicate `.env.template` and rename it to `.env.local`
+5. Add proper store values to `.env.local`
+6. Run `npm run dev` to build and watch for code changes
 
 ## Work in progress
 
@@ -151,5 +156,5 @@ Next, you're free to customize the starter. More updates coming soon. Stay tuned
 After Email confirmation, Checkout should be manually enabled through BigCommerce platform. Look for "Review & test your store" section through BigCommerce's dashboard.
 <br>
 <br>
-BigCommerce team has been notified and they plan to add more detailed about this subject.
+BigCommerce team has been notified and they plan to add more details about this subject.
 </details>
